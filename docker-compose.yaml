@@ -1,0 +1,14 @@
+services:
+  postgres:
+    image: postgres:16
+    ports:
+      - 5431:5432
+    environment:
+      POSTGRES_DB: postgres
+      POSTGRES_USRR: prasoonasati
+      POSTGRES_PASSWORD: Rahul9826
+    volumes:
+      - postgres_data:/var/lib/postgressql/data
+
+volumes:
+  postgres_data:
